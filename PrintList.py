@@ -5,10 +5,12 @@ with open(path,'r',encoding="utf-8",newline="\n") as f:
 fileb = filea.split("\n")
 
 time = 0
+numa = 0 
 while time < len(fileb):
     filec = fileb[time].split(":")
     if filec[0] == "Name":
-        print(filec[1])
+        numa = numa + 1
+        print(str(numa) + "." + filec[1])
     
     time = time + 1
     
