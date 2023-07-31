@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 path = "Packages"
 with open(path,'r',encoding="utf-8",newline="\n") as f:
     filea = f.read()
