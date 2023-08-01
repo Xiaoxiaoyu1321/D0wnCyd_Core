@@ -2,6 +2,7 @@ import requests
 import sys
 import os
 from tqdm import tqdm
+version="20230073101"
 header = {'User-Agent' : "Cydia/0.9 CFNetwork/711.5.6 Darwin/14.0.0"}
 
 server = "127.0.0.1"
@@ -11,8 +12,13 @@ path = "Packages"
 try:
     server=sys.argv[1] #服务器地址
     path = sys.argv[2] #目录
+    if server == "version":
+        print(version)
+        exit()
+        
     print("服务器:" + server)
     print("目录：" + path)
+
 
     
 except Exception as q:
